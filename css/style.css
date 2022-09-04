@@ -154,7 +154,8 @@ h6,
     width: 100%;
     top: 0;
     left: 0;
-    border-bottom: 1px solid rgba(256, 256, 256, 0.1);
+    border-bottom: 1px solid var(--light);
+    background-color: var(--dark);
     z-index: 999;
   }
 
@@ -199,10 +200,9 @@ h6,
 .hero-header {
   margin-bottom: 6rem;
   padding: 15rem 0 10rem 0;
-  background: url(../img/blob-top-left.png), url(../img/blob-top-right.png),
-    url(../img/blob-bottom-left.png), url(../img/blob-bottom-right.png);
-  background-position: left 0px top 0px, right 0px top 0px, left 0px bottom 0px,
-    right 0px bottom 0px, center center, center bottom;
+  background: url(../img/hero-bg.jpg);
+  background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
 }
 
@@ -212,116 +212,17 @@ h6,
   }
 }
 
-.slideshow {
-  position: relative;
+.hero-image-container {
+  width: 50%;
+  height: 50vh;
+  overflow: hidden;
+}
+
+
+.hero-image {
   width: 100%;
-  height: 30vh;
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media screen and (min-width: 576px) { 
-  .slideshow {
-    height: 40vh;
-  }
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media screen and (min-width: 768px) { 
-  .slideshow {
-    height: 50vh;
-  }
-}
-
- /* Large devices (desktops, 992px and up) */
- @media screen and (min-width: 992px) { 
-  .slideshow {
-    height: 60vh;
-  }
-}
-
-.item {
-  position: absolute;
-  width: 100%;
-  height: auto;
-}
-
-.item-image-container {
-  position: relative;
-  width: 40%;
-}
-
-.item-image-container::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: var(--primary);
-  opacity: 0;
-  z-index: 1;
-}
-
-.item-image {
-  position: relative;
-  width: 100%;
-  height: auto;
-  opacity: 0;
-  display: block;
   /* transition: property name | duration | timing-function | delay  */
   transition: opacity 0.3s ease-out 0.3s;
-}
-
-.item.active .item-image {
-  opacity: 1;
-}
-
-.item.active .item-image-container::before {
-  opacity: 0.8;
-}
-
-/* Staggered Vertical Items ------------------------------------------------------*/
-.item-header {
-  position: absolute;
-  top: 18%;
-  left: 20%;
-  z-index: 100;
-}
-
-.item-header .vertical-part {
-  font-family: "Jost", sans-serif;
-  -webkit-font-smoothing: auto;
-  font-size: 4vw;
-}
-
-.item-description {
-  position: absolute;
-  top: 32%;
-  right: 0;
-  width: 45%;
-  left: 45%;
-}
-
-/* Controls ----------------------------------------------------------------------*/
-.controls {
-  position: relative;
-  text-align: right;
-  z-index: 1000;
-}
-
-.controls ul {
-  list-style: none;
-}
-
-.controls ul li {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin: 3px;
-  background: #bdbdd5;
-  cursor: pointer;
-}
-
-.controls ul li.active {
-  background: #6a6a77;
 }
 
 /*** Section Title ***/
