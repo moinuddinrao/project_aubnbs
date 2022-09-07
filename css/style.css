@@ -155,7 +155,20 @@ h6,
     top: 0;
     left: 0;
     border-bottom: 1px solid var(--light);
-    background-color: var(--dark);
+    /* background-color: var(--dark); */
+    background: #0f2027; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #2c5364,
+      #203a43,
+      #0f2027
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #2c5364,
+      #203a43,
+      #0f2027
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     z-index: 999;
   }
 
@@ -236,27 +249,26 @@ h6,
   transition: opacity 0.3s ease-out 0.3s;
 }
 
-
 /* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
+@media (min-width: 576px) {
   .hero-image-container {
     height: 30vh;
   }
- }
+}
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
   .hero-image-container {
     height: 40vh;
   }
- }
+}
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
   .hero-image-container {
     height: 50vh;
   }
- }
+}
 
 /*** Section Title ***/
 .section-title {
