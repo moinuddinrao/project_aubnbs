@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-  --primary: #000000;
+  --primary: #0f2027;
   --secondary: #fba504;
   --light: #f6f4f9;
   --dark: #04000b;
@@ -198,12 +198,22 @@ h6,
     opacity: 1;
   }
 
-  .navbar-light .btn {
+  .navbar-light .btn{
     color: var(--dark);
-    background: #ffffff;
+    background:var(--light);
+  }
+
+  .navbar-light .btn:hover {
+    color: var(--dark);
+    background: var(--secondary);
   }
 
   .sticky-top.navbar-light .btn {
+    color: var(--light);
+    background: var(--dark);
+  }
+
+  .sticky-top.navbar-light .btn:hover {
     color: var(--dark);
     background: var(--secondary);
   }
@@ -525,7 +535,7 @@ h6,
   height: 100%;
   top: 0;
   left: 0;
-  background: #000000;
+  background: #0f2027;
   transition: 0.5s;
   opacity: 0;
 }

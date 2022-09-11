@@ -10,8 +10,8 @@
         }, 1);
     };
     spinner();
-    
-    
+
+
     // Initiate the wowjs
     new WOW().init();
 
@@ -26,8 +26,8 @@
             $(".logo").attr("src","img/logo/AUBB Logo White-01.png");
         }
     });
-    
-    
+
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -82,5 +82,5 @@
 
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
-    
+
 })(jQuery);
