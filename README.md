@@ -1,11 +1,11 @@
-# Little Lemon Restaurant
+# Air University Bits & Bytes Society
 
-## We are empowering students and businesses to make the world a better place for everyone.
+## We empower students and businesses to make the world better for everyone.
 
 ### Functionalities
 
 Home, About, Services, Events, Pages, and Contact pages.
 
-Built using HTML, CSS, SCSS, JS, and jQuery.
+It was built using HTML, CSS, SCSS, JS, and jQuery.
 
 ##Live Demo: https://aubitsnbytes.com/
