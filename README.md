@@ -8,4 +8,4 @@ Home, About, Services, Events, Pages, and Contact pages.
 
 It was built using HTML, CSS, SCSS, JS, and jQuery.
 
-##Live Demo: https://aubitsnbytes.com/
+##Live Demo: https://project-aubnbs.netlify.app/
